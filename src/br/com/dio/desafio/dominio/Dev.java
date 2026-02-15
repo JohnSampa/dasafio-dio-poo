@@ -19,7 +19,7 @@ public class Dev {
     }
 
     public void proguedir(){
-        Optional<Conteudo> conteudo = this.conteudosConcluidos.stream().findFirst();
+        Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
 
         if(conteudo.isPresent()){
             this.conteudosConcluidos.add(conteudo.get());
